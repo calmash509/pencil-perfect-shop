@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your Cart - Pencils At WIS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: white">Pencils At WIS</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="shop.html">Products</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cart-page">
+      <h2>Your Shopping Cart</h2>
+      
+      <div class="cart-container">
+        <div class="cart-items">
+          <!-- Cart Item 1 -->
+          <div id="pencil" class="cart-item">
+            <img src="https://via.placeholder.com/100" alt="Pencils" class="cart-item-image">
+            <div class="cart-item-details">
+              <h3>Pencils</h3>
+              <p>Smooth-writing pencils</p>
+            </div>
+            <div class="cart-item-quantity">
+              <input id="pencilNum" type="number" value="0" min="1">
+            </div>
+            <div class="cart-item-price">
+              <span id="pencilPrice">$0</span>
+            </div>
+          </div>
+          
+          <!-- Cart Item 2 -->
+          <div id="sharp" class="cart-item">
+            <img src="https://via.placeholder.com/100" alt="Mini Sharpeners" class="cart-item-image">
+            <div class="cart-item-details">
+              <h3>Mini Sharpeners</h3>
+              <p>Compact sharpeners for school</p>
+            </div>
+            <div class="cart-item-quantity">
+              <input type="number" value="0" min="1">
+            </div>
+            <div class="cart-item-price">
+              <span>$0</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span>$0</span>
+          </div>
+          <div class="summary-line">
+          </div>
+          <div class="summary-line total-line">
+            <span>Total</span>
+            <span>$0</span>
+          </div>
+          <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Pencil Point at WIS.</p>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="sweetalert2.all.js"></script>
+  </body>
+</html>
